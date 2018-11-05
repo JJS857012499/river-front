@@ -335,11 +335,7 @@ export default {
           width: 115,
           sortable: true,
           render: (h, params) => {
-            if (this.getStore("roles").includes("ROLE_ADMIN")) {
               return h("span", params.row.mobile);
-            } else{
-              return h("span", "您无权查看该数据");
-            }
           }
         },
         {
